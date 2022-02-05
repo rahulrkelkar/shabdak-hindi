@@ -46,39 +46,44 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
   return (
     <div>
       <div className="flex justify-center mb-1">
-        <Key value="Q" onClick={onClick} status={charStatuses['Q']} />
-        <Key value="W" onClick={onClick} status={charStatuses['W']} />
-        <Key value="E" onClick={onClick} status={charStatuses['E']} />
-        <Key value="R" onClick={onClick} status={charStatuses['R']} />
-        <Key value="T" onClick={onClick} status={charStatuses['T']} />
-        <Key value="Y" onClick={onClick} status={charStatuses['Y']} />
-        <Key value="U" onClick={onClick} status={charStatuses['U']} />
-        <Key value="I" onClick={onClick} status={charStatuses['I']} />
-        <Key value="O" onClick={onClick} status={charStatuses['O']} />
-        <Key value="P" onClick={onClick} status={charStatuses['P']} />
+        <Key value="अ" onClick={onClick} status={charStatuses['अ']} />
+        <Key value="आ" onClick={onClick} status={charStatuses['आ']} />
+        <Key value="इ" onClick={onClick} status={charStatuses['इ']} />
+        <Key value="क" onClick={onClick} status={charStatuses['क']} />
+        <Key value="ख" onClick={onClick} status={charStatuses['ख']} />
+        <Key value="ग" onClick={onClick} status={charStatuses['ग']} />
+        <Key value="घ" onClick={onClick} status={charStatuses['घ']} />
+        <Key value="च" onClick={onClick} status={charStatuses['च']} />
+        <Key value="छ" onClick={onClick} status={charStatuses['छ']} />
+        <Key value="ज" onClick={onClick} status={charStatuses['ज']} />
       </div>
       <div className="flex justify-center mb-1">
-        <Key value="A" onClick={onClick} status={charStatuses['A']} />
-        <Key value="S" onClick={onClick} status={charStatuses['S']} />
-        <Key value="D" onClick={onClick} status={charStatuses['D']} />
-        <Key value="F" onClick={onClick} status={charStatuses['F']} />
-        <Key value="G" onClick={onClick} status={charStatuses['G']} />
-        <Key value="H" onClick={onClick} status={charStatuses['H']} />
-        <Key value="J" onClick={onClick} status={charStatuses['J']} />
-        <Key value="K" onClick={onClick} status={charStatuses['K']} />
-        <Key value="L" onClick={onClick} status={charStatuses['L']} />
+        <Key value="झ" onClick={onClick} status={charStatuses['झ']} />
+        <Key value="ट" onClick={onClick} status={charStatuses['ट']} />
+        <Key value="ठ" onClick={onClick} status={charStatuses['ठ']} />
+        <Key value="ड" onClick={onClick} status={charStatuses['ड']} />
+        <Key value="ढ" onClick={onClick} status={charStatuses['ढ']} />
+        <Key value="ण" onClick={onClick} status={charStatuses['ण']} />
+        <Key value="त" onClick={onClick} status={charStatuses['त']} />
+        <Key value="थ" onClick={onClick} status={charStatuses['थ']} />
+        <Key value="द" onClick={onClick} status={charStatuses['द']} />
+        <Key value="ध" onClick={onClick} status={charStatuses['ध']} />
+        <Key value="न" onClick={onClick} status={charStatuses['न']} />
       </div>
       <div className="flex justify-center">
         <Key width={65.4} value="ENTER" onClick={onClick}>
           {ENTER_TEXT}
         </Key>
-        <Key value="Z" onClick={onClick} status={charStatuses['Z']} />
-        <Key value="X" onClick={onClick} status={charStatuses['X']} />
-        <Key value="C" onClick={onClick} status={charStatuses['C']} />
-        <Key value="V" onClick={onClick} status={charStatuses['V']} />
-        <Key value="B" onClick={onClick} status={charStatuses['B']} />
-        <Key value="N" onClick={onClick} status={charStatuses['N']} />
-        <Key value="M" onClick={onClick} status={charStatuses['M']} />
+        <Key value="प" onClick={onClick} status={charStatuses['प']} />
+        <Key value="फ" onClick={onClick} status={charStatuses['फ']} />
+        <Key value="ब" onClick={onClick} status={charStatuses['ब']} />
+        <Key value="भ" onClick={onClick} status={charStatuses['भ']} />
+        <Key value="म" onClick={onClick} status={charStatuses['म']} />
+        <Key value="य" onClick={onClick} status={charStatuses['य']} />
+        <Key value="र" onClick={onClick} status={charStatuses['र']} />
+        <Key value="ल" onClick={onClick} status={charStatuses['ल']} />
+        <Key value="व" onClick={onClick} status={charStatuses['व']} />
+        <Key value="श" onClick={onClick} status={charStatuses['श']} />
         <Key width={65.4} value="DELETE" onClick={onClick}>
           {DELETE_TEXT}
         </Key>
