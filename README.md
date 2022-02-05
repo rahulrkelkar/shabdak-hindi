@@ -8,7 +8,7 @@ Clone the repository and perform the following command line actions:
 ```bash
 $> cd word-guessing-game
 $> npm install
-$> npm run start
+$> HTTPS=true npm run start
 ```
 
 _To build/run docker container:_
