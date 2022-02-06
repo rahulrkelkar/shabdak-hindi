@@ -8,6 +8,7 @@ import { BaseModal } from './BaseModal'
 import {
   STATISTICS_TITLE,
   GUESS_DISTRIBUTION_TEXT,
+  GUESS_DISTRIBUTION_SUBTEXT,
   NEW_WORD_TEXT,
   SHARE_TEXT,
 } from '../../constants/strings'
@@ -52,6 +53,9 @@ export const StatsModal = ({
       <h4 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
         {GUESS_DISTRIBUTION_TEXT}
       </h4>
+      <h5 className="text-sm leading-6 font-tiny text-gray-700 dark:text-gray-100">
+        {GUESS_DISTRIBUTION_SUBTEXT}
+      </h5>
       <Histogram gameStats={gameStats} />
       {(isGameLost || isGameWon) && (
         <div className="mt-5 sm:mt-6 columns-2 dark:text-white">

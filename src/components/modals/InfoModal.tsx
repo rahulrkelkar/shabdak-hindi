@@ -1,5 +1,7 @@
 import { Cell } from '../grid/Cell'
 import { BaseModal } from './BaseModal'
+import {MAX_CHALLENGES} from "../../constants/settings";
+import {MAX_WORD_LENGTH} from "../../constants/settings";
 
 type Props = {
   isOpen: boolean
@@ -8,43 +10,43 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="वर्दळ असा खेळा" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+        एक {MAX_WORD_LENGTH}-अक्षरी शब्द {MAX_CHALLENGES} प्रयत्नांत ओळखा! प्रत्येक प्रयात्नानंतर घरांची
+          पार्श्वभूमी बदलेल त्यावरून तुम्ही त्या शब्दाच्या किती जवळ आहात ते कळेल.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="W" status="correct" />
-        <Cell value="E" />
-        <Cell value="A" />
-        <Cell value="R" />
-        <Cell value="Y" />
+        <Cell value="स" status="correct" />
+        <Cell value="व" status="absent"/>
+        <Cell value="ड" status="absent"/>
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
+        शब्दात 'स' आहे आणि तो याच ठिकाणी आहे.
+      </p>
+      <p className="text-sm text-gray-500">
+            (म्हणजे शब्द "सरळ" किंवा "सदन" असू शकेल, पण "आवड" नक्कीच नाही.)
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
-        <Cell value="L" status="present" />
-        <Cell value="O" />
-        <Cell value="T" />
+          <Cell value="व" status="absent"/>
+          <Cell value="द" status="present" />
+          <Cell value="न" status="absent"/>
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
+          शब्दात 'द' आहे पण तो या ठिकाणी नाहीये!
+      </p>
+      <p className="text-sm text-gray-500">
+            (म्हणजे शब्द "अंगद" किंवा "दरड" असू शकेल, पण "कदर" नक्कीच नाही.)
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
-        <Cell value="A" />
-        <Cell value="G" />
-        <Cell value="U" status="absent" />
-        <Cell value="E" />
+          <Cell value="ल" status="absent"/>
+          <Cell value="व" status="absent" />
+          <Cell value="ण" status="absent"/>
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+        यापैकी कुठलेच अक्षर शब्दात नाही.
       </p>
     </BaseModal>
   )
