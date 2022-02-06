@@ -1,8 +1,8 @@
-# Word Guessing Game
+# Word Guessing Game (Marathi Port)
 
 This is a clone project of that popular word guessing game we all know and love. Made using React, Typescript, and Tailwind.
 
-[**Try out the demo!**](https://word-guessing-game-cwackerfuss.vercel.app/)
+[**Try out the demo!**](https://prod.d3k0jquyuzlvpu.amplifyapp.com/)
 
 ## Build and run
 ### To Run Locally:
