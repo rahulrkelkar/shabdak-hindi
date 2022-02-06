@@ -2,9 +2,9 @@ export const GAME_TITLE = 'वर्दळ'
 
 export const WIN_MESSAGES = ['महान!', 'उत्तम!', 'भले शाब्बास!']
 export const GAME_COPIED_MESSAGE = 'आता व्हॉट्सॅप् वर पेस्ट करा'
-export const ABOUT_GAME_MESSAGE = 'वर्दळीविषयी थोडेसे...'
+export const ABOUT_GAME_MESSAGE = '\'वर्दळ\'विषयी थोडेसे...'
 export const NOT_ENOUGH_LETTERS_MESSAGE = 'आणखी अक्षरं आवश्यक!'
-export const WORD_NOT_FOUND_MESSAGE = 'हा कुठला शब्द?'
+export const WORD_NOT_FOUND_MESSAGE = 'हा कुठला शब्द? दुसरा निवडा!'
 export const CORRECT_WORD_MESSAGE = (solution: string) =>
   `आजचे उत्तर आहे ${solution}`
 export const ENTER_TEXT = 'एंटर'
