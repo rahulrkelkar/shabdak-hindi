@@ -1,14 +1,16 @@
+import {MAX_WORD_LENGTH} from "./settings";
+
 export const GAME_TITLE = 'वर्दळ'
 
 export const WIN_MESSAGES = ['महान!', 'उत्तम!', 'भले शाब्बास!']
 export const GAME_COPIED_MESSAGE = 'आता व्हॉट्सॅप् वर पेस्ट करा'
 export const ABOUT_GAME_MESSAGE = '\'वर्दळ\'विषयी थोडेसे...'
-export const NOT_ENOUGH_LETTERS_MESSAGE = 'आणखी अक्षरं आवश्यक!'
-export const WORD_NOT_FOUND_MESSAGE = 'हा कुठला शब्द? दुसरा निवडा!'
+export const NOT_ENOUGH_LETTERS_MESSAGE = `निदान ${MAX_WORD_LENGTH} तरी अक्षरं हवीत!`
 export const CORRECT_WORD_MESSAGE = (solution: string) =>
-  `आजचे उत्तर आहे ${solution}`
-export const ENTER_TEXT = 'एंटर'
-export const DELETE_TEXT = 'नको'
+  `आजचा शब्द आहे ${solution}`
+export const ENTER_TEXT = '\u2713'
+export const DELETE_TEXT = '\u232B'
+export const WORD_NOT_FOUND_MESSAGE = 'हा कुठला शब्द? दुसरा निवडा! (\u232B की वापरा)'
 export const STATISTICS_TITLE = 'काही आकडे'
 export const GUESS_DISTRIBUTION_TEXT = 'तुमचे प्रयत्न असे होते'
 export const GUESS_DISTRIBUTION_SUBTEXT = '(उजवीकडे: ओळखलेली शब्दसंख्या, डावीकडे: लागलेले प्रयत्न)'
