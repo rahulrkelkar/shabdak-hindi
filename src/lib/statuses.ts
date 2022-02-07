@@ -5,7 +5,8 @@ export type CharStatus = 'absent' | 'present' | 'correct'
 export type CharValue =
   | 'अ'
   | 'आ'
-  | 'इ'
+  | 'ई'
+  // | 'इ'
   | 'क'
   | 'ख'
   | 'ग'
@@ -39,6 +40,7 @@ export type CharValue =
   | 'ह'
   | 'क्ष'
   | 'ज्ञ'
+  | 'ळ'
 
 export const getStatuses = (
   guesses: string[]

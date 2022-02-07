@@ -51,13 +51,13 @@ export const Keyboard = ({onChar, onDelete, onEnter, guesses}: Props) => {
                 </Key>
                 <Key value="अ" onClick={onClick} status={charStatuses['अ']}/>
                 <Key value="आ" onClick={onClick} status={charStatuses['आ']}/>
-                <Key value="इ" onClick={onClick} status={charStatuses['इ']}/>
+                <Key value="ई" onClick={onClick} status={charStatuses['ई']}/>
                 <Key value="क" onClick={onClick} status={charStatuses['क']}/>
                 <Key value="ख" onClick={onClick} status={charStatuses['ख']}/>
                 <Key value="ग" onClick={onClick} status={charStatuses['ग']}/>
                 <Key value="घ" onClick={onClick} status={charStatuses['घ']}/>
                 <Key value="च" onClick={onClick} status={charStatuses['च']}/>
-                <Key value="छ" onClick={onClick} status={charStatuses['छ']}/>
+                <Key value="ळ" onClick={onClick} status={charStatuses['ळ']}/>
                 <Key value="ज" onClick={onClick} status={charStatuses['ज']}/>
                 <Key width={60.4} value="DELETE" onClick={onClick}>
                     {DELETE_TEXT}
