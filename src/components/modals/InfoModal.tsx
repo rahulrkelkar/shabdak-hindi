@@ -10,7 +10,7 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="वर्दळ असा खेळा" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="'शब्दक' असा खेळा" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         एक {MAX_WORD_LENGTH}-अक्षरी शब्द {MAX_CHALLENGES} प्रयत्नांत ओळखा! प्रत्येक प्रयात्नानंतर घरांची
           पार्श्वभूमी बदलेल त्यावरून तुम्ही त्या शब्दाच्या किती जवळ आहात ते कळेल.

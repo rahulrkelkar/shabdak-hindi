@@ -37,7 +37,7 @@ export const getWordOfDay = () => {
 
   return {
     solution: WORDS[picked % WORDS.length].toUpperCase(),
-    solutionIndex: picked,
+    solutionIndex: today,
     tomorrow: nextday,
   }
 }

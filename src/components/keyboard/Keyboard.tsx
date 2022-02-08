@@ -57,7 +57,6 @@ export const Keyboard = ({onChar, onDelete, onEnter, guesses}: Props) => {
                 <Key value="ग" onClick={onClick} status={charStatuses['ग']}/>
                 <Key value="घ" onClick={onClick} status={charStatuses['घ']}/>
                 <Key value="च" onClick={onClick} status={charStatuses['च']}/>
-                <Key value="ळ" onClick={onClick} status={charStatuses['ळ']}/>
                 <Key value="ज" onClick={onClick} status={charStatuses['ज']}/>
                 <Key width={60.4} value="DELETE" onClick={onClick}>
                     {DELETE_TEXT}
@@ -90,6 +89,7 @@ export const Keyboard = ({onChar, onDelete, onEnter, guesses}: Props) => {
                 <Key value="स" onClick={onClick} status={charStatuses['स']}/>
                 <Key value="ष" onClick={onClick} status={charStatuses['ष']}/>
                 <Key value="ह" onClick={onClick} status={charStatuses['ह']}/>
+                <Key value="ळ" onClick={onClick} status={charStatuses['ळ']}/>
             </div>
         </div>
     )
