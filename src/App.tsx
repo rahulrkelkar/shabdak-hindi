@@ -1,5 +1,5 @@
 import {
-  InformationCircleIcon,
+  // InformationCircleIcon,
   ChartBarIcon,
   SunIcon,
   MoonIcon,
@@ -29,7 +29,10 @@ import {
 } from './lib/localStorage'
 
 import './App.css'
-import { DotsVerticalIcon } from '@heroicons/react/solid'
+import {
+  DotsVerticalIcon,
+  QuestionMarkCircleIcon,
+} from '@heroicons/react/solid'
 
 const ALERT_TIME_MS = 2000
 
@@ -174,7 +177,7 @@ function App() {
             onClick={() => handleDarkMode(!isDarkMode)}
           />
         )}
-        <InformationCircleIcon
+        <QuestionMarkCircleIcon
           className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
         />
