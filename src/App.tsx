@@ -34,7 +34,7 @@ import {
   QuestionMarkCircleIcon,
 } from '@heroicons/react/solid'
 
-const ALERT_TIME_MS = 2000
+const ALERT_TIME_MS = 2500
 
 function App() {
   const prefersDarkMode = window.matchMedia(

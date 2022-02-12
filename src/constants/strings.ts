@@ -10,7 +10,7 @@ export const CORRECT_WORD_MESSAGE = (solution: string) =>
   `आजचा शब्द आहे ${solution}`
 export const ENTER_TEXT = '\u2713'
 export const DELETE_TEXT = '\u232B'
-export const WORD_NOT_FOUND_MESSAGE = 'हा कुठला शब्द? दुसरा निवडा! (\u232B की वापरा)'
+export const WORD_NOT_FOUND_MESSAGE = 'हा कुठला शब्द? दुसरा निवडा! (\u232B कळ वापरा)'
 export const STATISTICS_TITLE = 'काही आकडे'
 export const GUESS_DISTRIBUTION_TEXT = 'तुमचे प्रयत्न असे होते'
 export const GUESS_DISTRIBUTION_SUBTEXT = '(उजवीकडे: ओळखलेली शब्दसंख्या, डावीकडे: लागलेले प्रयत्न)'
