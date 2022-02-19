@@ -1,5 +1,6 @@
 import { getGuessStatuses } from '../../lib/statuses'
 import { Cell } from './Cell'
+import {syllables} from "../../lib/devStrUtils";
 
 type Props = {
   guess: string
@@ -10,7 +11,7 @@ export const CompletedRow = ({ guess }: Props) => {
 
   return (
     <div className="flex justify-center mb-1">
-      {guess.split('').map((letter, i) => (
+      {syllables(guess).map((letter, i) => (
         <Cell key={i} value={letter} status={statuses[i]} />
       ))}
     </div>

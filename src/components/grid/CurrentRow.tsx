@@ -1,12 +1,13 @@
 import { MAX_WORD_LENGTH } from '../../constants/settings'
 import { Cell } from './Cell'
+import {syllables} from "../../lib/devStrUtils";
 
 type Props = {
   guess: string
 }
 
 export const CurrentRow = ({ guess }: Props) => {
-  const splitGuess = guess.split('')
+  const splitGuess = syllables(guess)
   const emptyCells = Array.from(Array(MAX_WORD_LENGTH - splitGuess.length))
 
   return (

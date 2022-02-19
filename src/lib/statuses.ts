@@ -1,4 +1,5 @@
 import { solution } from './words'
+import {syllables} from "./devStrUtils";
 
 export type CharStatus = 'absent' | 'present' | 'correct'
 
@@ -41,20 +42,24 @@ export type CharValue =
   | 'क्ष'
   | 'ज्ञ'
   | 'ळ'
+  | 'सा'
+  | 'शा'
+  | 'दा'
 
 export const getStatuses = (
   guesses: string[]
 ): { [key: string]: CharStatus } => {
-  const charObj: { [key: string]: CharStatus } = {}
+  const  charObj: { [key: string]: CharStatus } = {}
 
   guesses.forEach((word) => {
-    word.split('').forEach((letter, i) => {
-      if (!solution.includes(letter)) {
+    syllables(word).forEach((letter, i) => {
+      let solutionSyllables = syllables(solution);
+      if (!solutionSyllables.includes(letter)) {
         // make status absent
         return (charObj[letter] = 'absent')
       }
 
-      if (letter === solution[i]) {
+      if (letter === solutionSyllables[i]) {
         //make status correct
         return (charObj[letter] = 'correct')
       }
@@ -70,12 +75,12 @@ export const getStatuses = (
 }
 
 export const getGuessStatuses = (guess: string): CharStatus[] => {
-  const splitSolution = solution.split('')
-  const splitGuess = guess.split('')
+  const splitSolution = syllables(solution)
+  const splitGuess = syllables(guess)
 
   const solutionCharsTaken = splitSolution.map((_) => false)
 
-  const statuses: CharStatus[] = Array.from(Array(guess.length))
+  const statuses: CharStatus[] = Array.from(Array(splitGuess.length))
 
   // handle all correct cases first
   splitGuess.forEach((letter, i) => {

@@ -33,6 +33,7 @@ import {
   DotsVerticalIcon,
   QuestionMarkCircleIcon,
 } from '@heroicons/react/solid'
+import { syllables } from './lib/devStrUtils'
 
 const ALERT_TIME_MS = 2500
 
@@ -110,7 +111,7 @@ function App() {
 
   const onChar = (value: string) => {
     if (
-      currentGuess.length < MAX_WORD_LENGTH &&
+      syllables(currentGuess).length < MAX_WORD_LENGTH &&
       guesses.length < MAX_CHALLENGES &&
       !isGameWon
     ) {
@@ -119,14 +120,15 @@ function App() {
   }
 
   const onDelete = () => {
-    setCurrentGuess(currentGuess.slice(0, -1))
+    const p = syllables(currentGuess).slice(0, -1).join('')
+    setCurrentGuess(p)
   }
 
   const onEnter = () => {
     if (isGameWon || isGameLost) {
       return
     }
-    if (!(currentGuess.length === MAX_WORD_LENGTH)) {
+    if (!(syllables(currentGuess).length === MAX_WORD_LENGTH)) {
       setIsNotEnoughLetters(true)
       return setTimeout(() => {
         setIsNotEnoughLetters(false)
@@ -141,7 +143,7 @@ function App() {
 
     const winningWord = isWinningWord(currentGuess)
     if (
-      currentGuess.length === MAX_WORD_LENGTH &&
+      syllables(currentGuess).length === MAX_WORD_LENGTH &&
       guesses.length < MAX_CHALLENGES &&
       !isGameWon
     ) {
