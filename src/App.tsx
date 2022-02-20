@@ -164,7 +164,7 @@ function App() {
 
   return (
     <div className="w-full absolute flex flex-col overflow-hidden h-full">
-      <div className="flex w-80 mx-auto items-center mb-8">
+      <div className="flex w-80 mx-auto items-center mb-5">
         <h1 className="text-xl ml-2.5 grow font-bold dark:text-white">
           {GAME_TITLE}
         </h1>

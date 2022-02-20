@@ -1,5 +1,5 @@
 import { BaseModal } from './BaseModal'
-import {ABOUT_GAME_MESSAGE} from "../../constants/strings";
+import {ABOUT_GAME_MESSAGE, GAME_VERSION} from "../../constants/strings";
 
 type Props = {
   isOpen: boolean
@@ -9,6 +9,7 @@ type Props = {
 export const AboutModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title={ABOUT_GAME_MESSAGE} isOpen={isOpen} handleClose={handleClose}>
+      <span className="text-xs">{GAME_VERSION}</span>
       <p className="text-medium text-gray-500 dark:text-gray-300">
         हा खेळ जगप्रसिद्ध "Wordle" या गेम वर आधारित आहे.
         हा मराठी भाषेत आपल्यापर्यंत आणला आहे, केदार म्हसवडे व हृषिकेश नेने यांनी.
