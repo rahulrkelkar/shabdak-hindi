@@ -45,6 +45,7 @@ export type CharValue =
   | 'सा'
   | 'शा'
   | 'दा'
+  | 'के'
 
 export const getStatuses = (
   guesses: string[]

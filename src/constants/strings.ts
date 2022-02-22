@@ -4,7 +4,7 @@ import GitInfo from 'react-git-info/macro';
 export const GAME_TITLE = 'शब्दक'
 export const GAME_VERSION = GitInfo().commit.shortHash || 'unknown'
 export const GAME_URL = 'shabdak.com'  // TODO #17
-export const WIN_MESSAGES = ['महान!', 'उत्तम!', 'भले शाब्बास!']
+export const WIN_MESSAGES = ['फारच छान!', 'उत्तम!', 'भले शाब्बास!']
 export const GAME_COPIED_MESSAGE = 'आता व्हॉट्सॅप् वर पेस्ट करा'
 export const ABOUT_GAME_MESSAGE = `'${GAME_TITLE}'विषयी थोडेसे ...`
 export const NOT_ENOUGH_LETTERS_MESSAGE = `निदान ${MAX_WORD_LENGTH} तरी अक्षरं हवीत!`
