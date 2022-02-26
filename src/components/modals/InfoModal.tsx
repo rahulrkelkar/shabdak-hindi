@@ -12,41 +12,41 @@ type Props = {
 
 export const InfoModal = ({isOpen, handleClose}: Props) => {
     return (
-        <BaseModal title="'शब्दक' असा खेळा" isOpen={isOpen} handleClose={handleClose}>
+        <BaseModal title="शब्दक कैसे खेलें" isOpen={isOpen} handleClose={handleClose}>
             <div className={`iframe-container`}>
-                <iframe src="https://www.youtube.com/embed/BeewFNe8XRw" title="शब्दक कसा खेळाल?"
+                <iframe src="https://www.youtube.com/embed/BeewFNe8XRw" title="शब्दक कैसे खेलें?"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen></iframe>
             </div>
-            <h2> काही उदाहरणे </h2>
+            <h2> कुछ उदाहरण </h2>
             <p className="text-sm text-gray-500 dark:text-gray-300">
-                एक {MAX_WORD_LENGTH}-अक्षरी शब्द {MAX_CHALLENGES} प्रयत्नांत ओळखा! प्रत्येक प्रयात्नानंतर '{ENTER_TEXT}' कळ दाबली की घरांची
-                पार्श्वभूमी बदलेल त्यावरून तुम्ही त्या शब्दाच्या किती जवळ आहात ते कळेल.
+                एक {MAX_WORD_LENGTH}-अक्षर का शब्द {MAX_CHALLENGES} कोशिशों में बूझिये! हर एक कोशिश के बाद '{ENTER_TEXT}' की दबाइये, जिस से
+                अक्षर की चौखट का रंग बदल जायेगा। उस से आप जान जायेंगे के आप सही शब्द के कितने नज़दीक हैं।
             </p>
 
             <div className="flex justify-center mb-1 mt-4">
                 <Cell value="स" status="correct"/>
-                <Cell value="व" status="absent"/>
-                <Cell value="ड" status="absent"/>
+                <Cell value="र" status="absent"/>
+                <Cell value="ल" status="absent"/>
             </div>
             <p className="text-sm text-gray-500 dark:text-gray-300">
-                शब्दात 'स' आहे आणि तो याच ठिकाणी आहे.
+            इस शब्द में 'स' अक्षर है, और इसी जगह है।
             </p>
             <p className="text-sm text-gray-500">
-                (म्हणजे शब्द "सरळ" किंवा "सदन" असू शकेल, पण "आवड" नक्कीच नाही.)
+            (याने शब्द "समय" या "सदन" हो सकता है, मगर "तरल" तो पक्का नहीं है।)
             </p>
 
             <div className="flex justify-center mb-1 mt-4">
-                <Cell value="व" status="absent"/>
+                <Cell value="ब" status="absent"/>
                 <Cell value="द" status="present"/>
                 <Cell value="न" status="absent"/>
             </div>
             <p className="text-sm text-gray-500 dark:text-gray-300">
-                शब्दात 'द' आहे पण तो या ठिकाणी नाहीये!
+            इस शब्द में 'द' तो है, मगर और किसी जगह पर!
             </p>
             <p className="text-sm text-gray-500">
-                (म्हणजे शब्द "रसद" किंवा "दरड" असू शकेल, पण "कदर" नक्कीच नाही.)
+            (याने शब्द "शहद" या "दशक" हो सकता है, मगर "गदर" तो पक्का नहीं है।)
             </p>
 
             <div className="flex justify-center mb-1 mt-4">
@@ -55,7 +55,7 @@ export const InfoModal = ({isOpen, handleClose}: Props) => {
                 <Cell value="ण" status="absent"/>
             </div>
             <p className="text-sm text-gray-500 dark:text-gray-300">
-                यापैकी कुठलेच अक्षर शब्दात नाही.
+            इस शब्द में ये सारे अक्षर नहीं हैं।
             </p>
         </BaseModal>
     )

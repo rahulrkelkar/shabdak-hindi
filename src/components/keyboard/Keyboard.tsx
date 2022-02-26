@@ -51,18 +51,20 @@ export const Keyboard = ({onChar, onDelete, onEnter, guesses}: Props) => {
                 </Key>
                 <Key value="अ" onClick={onClick} status={charStatuses['अ']}/>
                 <Key value="आ" onClick={onClick} status={charStatuses['आ']}/>
+                <Key value="इ" onClick={onClick} status={charStatuses['इ']}/>
                 <Key value="ई" onClick={onClick} status={charStatuses['ई']}/>
+                <Key value="उ" onClick={onClick} status={charStatuses['उ']}/>
                 <Key value="क" onClick={onClick} status={charStatuses['क']}/>
                 <Key value="ख" onClick={onClick} status={charStatuses['ख']}/>
                 <Key value="ग" onClick={onClick} status={charStatuses['ग']}/>
                 <Key value="घ" onClick={onClick} status={charStatuses['घ']}/>
-                <Key value="च" onClick={onClick} status={charStatuses['च']}/>
-                <Key value="ज" onClick={onClick} status={charStatuses['ज']}/>
                 <Key width={60.4} value="DELETE" onClick={onClick}>
                     {DELETE_TEXT}
                 </Key>
             </div>
             <div className="flex justify-center mb-1">
+                <Key value="च" onClick={onClick} status={charStatuses['च']}/>
+                <Key value="ज" onClick={onClick} status={charStatuses['ज']}/>
                 <Key value="झ" onClick={onClick} status={charStatuses['झ']}/>
                 <Key value="ट" onClick={onClick} status={charStatuses['ट']}/>
                 <Key value="ठ" onClick={onClick} status={charStatuses['ठ']}/>
@@ -74,10 +76,10 @@ export const Keyboard = ({onChar, onDelete, onEnter, guesses}: Props) => {
                 <Key value="द" onClick={onClick} status={charStatuses['द']}/>
                 <Key value="ध" onClick={onClick} status={charStatuses['ध']}/>
                 <Key value="न" onClick={onClick} status={charStatuses['न']}/>
-                <Key value="प" onClick={onClick} status={charStatuses['प']}/>
-                <Key value="फ" onClick={onClick} status={charStatuses['फ']}/>
             </div>
             <div className="flex justify-center">
+                <Key value="प" onClick={onClick} status={charStatuses['प']}/>
+                <Key value="फ" onClick={onClick} status={charStatuses['फ']}/>
                 <Key value="ब" onClick={onClick} status={charStatuses['ब']}/>
                 <Key value="भ" onClick={onClick} status={charStatuses['भ']}/>
                 <Key value="म" onClick={onClick} status={charStatuses['म']}/>
@@ -89,7 +91,6 @@ export const Keyboard = ({onChar, onDelete, onEnter, guesses}: Props) => {
                 <Key value="स" onClick={onClick} status={charStatuses['स']}/>
                 <Key value="ष" onClick={onClick} status={charStatuses['ष']}/>
                 <Key value="ह" onClick={onClick} status={charStatuses['ह']}/>
-                <Key value="ळ" onClick={onClick} status={charStatuses['ळ']}/>
             </div>
         </div>
     )
